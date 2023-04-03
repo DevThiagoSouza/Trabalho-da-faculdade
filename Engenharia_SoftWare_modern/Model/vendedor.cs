@@ -18,17 +18,5 @@ namespace Engenharia_SoftWare_modern.Model
         public string complemento { get; set; }
         public int telefone { get; set; }
 
-        public vendedor(int id, string nome, int cnpj, string nome_fantasia, string endereco, string rua, int numero, string complemento, int telefone)
-        {
-            this.id = id;
-            this.nome = nome;
-            this.cnpj = cnpj;
-            this.nome_fantasia = nome_fantasia;
-            this.endereco = endereco;
-            this.rua = rua;
-            this.numero = numero;
-            this.complemento = complemento;
-            this.telefone = telefone;
-        }
     }
 }

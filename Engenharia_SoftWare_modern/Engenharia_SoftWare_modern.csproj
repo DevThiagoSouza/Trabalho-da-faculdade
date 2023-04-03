@@ -81,10 +81,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contato.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Contato.Designer.cs">
+      <DependentUpon>Contato.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fomCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fomCliente.Designer.cs">
+      <DependentUpon>fomCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="GD_fornecedor.cs">
       <SubType>UserControl</SubType>
@@ -123,6 +135,12 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Contato.resx">
+      <DependentUpon>Contato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fomCliente.resx">
+      <DependentUpon>fomCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GD_fornecedor.resx">
       <DependentUpon>GD_fornecedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -460,6 +478,18 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-novo-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-whatsapp-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-mais-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

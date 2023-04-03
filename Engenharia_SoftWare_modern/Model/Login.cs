@@ -12,10 +12,6 @@ namespace Engenharia_SoftWare_modern
         public string login { get; set; }
         public string senha { get; set; }
 
-        public Login(string login, string senha)
-        {
-            this.login = login;
-            this.senha = senha;
-        }
+   
     }
 }

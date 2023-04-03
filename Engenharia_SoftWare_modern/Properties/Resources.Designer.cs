@@ -93,6 +93,16 @@ namespace Engenharia_SoftWare_modern.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_facebook_novo_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-facebook-novo-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_fornecedor_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-fornecedor-24", resourceCulture);
@@ -143,9 +153,29 @@ namespace Engenharia_SoftWare_modern.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_instagram_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-instagram-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_página_inicial_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-página-inicial-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pesquisar_mais_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pesquisar-mais-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +206,16 @@ namespace Engenharia_SoftWare_modern.Properties {
         internal static System.Drawing.Bitmap icons8_usuário_homem_com_círculo_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuário-homem-com-círculo-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_whatsapp_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-whatsapp-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

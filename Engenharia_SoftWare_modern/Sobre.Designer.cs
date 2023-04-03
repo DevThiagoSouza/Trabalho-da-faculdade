@@ -37,7 +37,7 @@ namespace Engenharia_SoftWare_modern
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(56, 158);
+            this.richTextBox1.Location = new System.Drawing.Point(71, 159);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(438, 235);
             this.richTextBox1.TabIndex = 1;
@@ -48,7 +48,7 @@ namespace Engenharia_SoftWare_modern
             this.textBox1.BackColor = System.Drawing.Color.LightGray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(211, 29);
+            this.textBox1.Location = new System.Drawing.Point(226, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(128, 46);
             this.textBox1.TabIndex = 2;
@@ -60,7 +60,7 @@ namespace Engenharia_SoftWare_modern
             this.textBox2.BackColor = System.Drawing.Color.LightGray;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(167, 88);
+            this.textBox2.Location = new System.Drawing.Point(182, 89);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(217, 46);
             this.textBox2.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace Engenharia_SoftWare_modern
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Sobre";
-            this.Size = new System.Drawing.Size(563, 504);
+            this.Size = new System.Drawing.Size(596, 410);
             this.ResumeLayout(false);
             this.PerformLayout();
 

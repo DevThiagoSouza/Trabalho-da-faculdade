@@ -1,7 +1,7 @@
 ﻿
 namespace Engenharia_SoftWare_modern
 {
-    partial class Tb_home
+    partial class Contato
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -29,35 +29,19 @@ namespace Engenharia_SoftWare_modern
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Engenharia_SoftWare_modern.Properties.Resources.thirteen__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(74, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(384, 237);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Tb_home
+            // Contato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Tb_home";
-            this.Size = new System.Drawing.Size(546, 410);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Name = "Contato";
+            this.Size = new System.Drawing.Size(487, 344);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

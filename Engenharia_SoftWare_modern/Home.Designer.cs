@@ -31,18 +31,9 @@ namespace Engenharia_SoftWare_modern
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnFornecedor = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Data = new System.Windows.Forms.Label();
             this.Hora = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -56,22 +47,41 @@ namespace Engenharia_SoftWare_modern
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnForn = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnFornecedor = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
             this.tb_home1 = new Engenharia_SoftWare_modern.Tb_home();
-            this.teste1 = new Engenharia_SoftWare_modern.teste();
-            this.sobre1 = new Engenharia_SoftWare_modern.Sobre();
+            this.fomCliente1 = new Engenharia_SoftWare_modern.fomCliente();
             this.gD_fornecedor1 = new Engenharia_SoftWare_modern.GD_fornecedor();
+            this.sobre1 = new Engenharia_SoftWare_modern.Sobre();
+            this.teste1 = new Engenharia_SoftWare_modern.teste();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlLogin.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -87,70 +97,6 @@ namespace Engenharia_SoftWare_modern
             this.panel1.Size = new System.Drawing.Size(200, 451);
             this.panel1.TabIndex = 0;
             // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_grocery_store_24;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(6, 250);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(180, 34);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Vendedor";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_usuário_24;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(6, 210);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(180, 34);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Cliente";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_informações_24;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(9, 330);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 34);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Sobre";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Engenharia_SoftWare_modern.Properties.Resources.thirteen__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 46);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(194, 79);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.HotPink;
@@ -159,53 +105,6 @@ namespace Engenharia_SoftWare_modern
             this.panel4.Size = new System.Drawing.Size(13, 34);
             this.panel4.TabIndex = 3;
             // 
-            // btnFornecedor
-            // 
-            this.btnFornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnFornecedor.FlatAppearance.BorderSize = 0;
-            this.btnFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecedor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFornecedor.ForeColor = System.Drawing.Color.White;
-            this.btnFornecedor.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_fornecedor_24;
-            this.btnFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFornecedor.Location = new System.Drawing.Point(6, 171);
-            this.btnFornecedor.Name = "btnFornecedor";
-            this.btnFornecedor.Size = new System.Drawing.Size(191, 34);
-            this.btnFornecedor.TabIndex = 7;
-            this.btnFornecedor.Text = "Fornecedor";
-            this.btnFornecedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFornecedor.UseVisualStyleBackColor = false;
-            this.btnFornecedor.Click += new System.EventHandler(this.btnFornecedor_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_telefone_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(9, 290);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 34);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Contato";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_cancelar_48;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -213,24 +112,6 @@ namespace Engenharia_SoftWare_modern
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(593, 42);
             this.panel2.TabIndex = 1;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_página_inicial_24;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(6, 131);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(191, 34);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "Home";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel3
             // 
@@ -242,16 +123,6 @@ namespace Engenharia_SoftWare_modern
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(600, 38);
             this.panel3.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_usuário_homem_com_círculo_24;
-            this.pictureBox2.Location = new System.Drawing.Point(550, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 31);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Data
             // 
@@ -283,7 +154,6 @@ namespace Engenharia_SoftWare_modern
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlLogin.Controls.Add(this.sobre1);
             this.pnlLogin.Controls.Add(this.panel5);
             this.pnlLogin.Controls.Add(this.button3);
             this.pnlLogin.Controls.Add(this.button2);
@@ -400,38 +270,212 @@ namespace Engenharia_SoftWare_modern
             this.btnForn.UseVisualStyleBackColor = false;
             this.btnForn.Click += new System.EventHandler(this.btnForn_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_usuário_homem_com_círculo_24;
+            this.pictureBox2.Location = new System.Drawing.Point(550, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 31);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_whatsapp_24;
+            this.pictureBox6.Location = new System.Drawing.Point(72, 422);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_instagram_24;
+            this.pictureBox5.Location = new System.Drawing.Point(38, 422);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_facebook_novo_24;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 422);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_grocery_store_24;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(6, 250);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(180, 34);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "Vendedor";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_usuário_24;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(6, 210);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(180, 34);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Cliente";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_informações_24;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(9, 330);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(177, 34);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Sobre";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Engenharia_SoftWare_modern.Properties.Resources.thirteen__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 46);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(194, 79);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnFornecedor
+            // 
+            this.btnFornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFornecedor.FlatAppearance.BorderSize = 0;
+            this.btnFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFornecedor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFornecedor.ForeColor = System.Drawing.Color.White;
+            this.btnFornecedor.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_fornecedor_24;
+            this.btnFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFornecedor.Location = new System.Drawing.Point(6, 171);
+            this.btnFornecedor.Name = "btnFornecedor";
+            this.btnFornecedor.Size = new System.Drawing.Size(191, 34);
+            this.btnFornecedor.TabIndex = 7;
+            this.btnFornecedor.Text = "Fornecedor";
+            this.btnFornecedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFornecedor.UseVisualStyleBackColor = false;
+            this.btnFornecedor.Click += new System.EventHandler(this.btnFornecedor_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_telefone_24;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(9, 290);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(191, 34);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Contato";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_cancelar_48;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 21);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::Engenharia_SoftWare_modern.Properties.Resources.icons8_página_inicial_24;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(6, 131);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(191, 34);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // tb_home1
             // 
             this.tb_home1.BackColor = System.Drawing.Color.LightGray;
-            this.tb_home1.Location = new System.Drawing.Point(237, 44);
+            this.tb_home1.Location = new System.Drawing.Point(203, 47);
             this.tb_home1.Name = "tb_home1";
-            this.tb_home1.Size = new System.Drawing.Size(523, 407);
+            this.tb_home1.Size = new System.Drawing.Size(593, 398);
             this.tb_home1.TabIndex = 7;
+            // 
+            // fomCliente1
+            // 
+            this.fomCliente1.BackColor = System.Drawing.Color.LightGray;
+            this.fomCliente1.Location = new System.Drawing.Point(258, 41);
+            this.fomCliente1.Name = "fomCliente1";
+            this.fomCliente1.Size = new System.Drawing.Size(538, 404);
+            this.fomCliente1.TabIndex = 10;
+            // 
+            // gD_fornecedor1
+            // 
+            this.gD_fornecedor1.BackColor = System.Drawing.Color.LightGray;
+            this.gD_fornecedor1.Location = new System.Drawing.Point(203, 38);
+            this.gD_fornecedor1.Name = "gD_fornecedor1";
+            this.gD_fornecedor1.Size = new System.Drawing.Size(593, 413);
+            this.gD_fornecedor1.TabIndex = 8;
+            // 
+            // sobre1
+            // 
+            this.sobre1.BackColor = System.Drawing.Color.LightGray;
+            this.sobre1.Location = new System.Drawing.Point(206, 38);
+            this.sobre1.Name = "sobre1";
+            this.sobre1.Size = new System.Drawing.Size(590, 410);
+            this.sobre1.TabIndex = 9;
             // 
             // teste1
             // 
             this.teste1.BackColor = System.Drawing.Color.LightGray;
             this.teste1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.teste1.Location = new System.Drawing.Point(294, 50);
+            this.teste1.Location = new System.Drawing.Point(203, 57);
             this.teste1.Name = "teste1";
-            this.teste1.Size = new System.Drawing.Size(410, 388);
+            this.teste1.Size = new System.Drawing.Size(589, 388);
             this.teste1.TabIndex = 6;
-            // 
-            // sobre1
-            // 
-            this.sobre1.BackColor = System.Drawing.Color.LightGray;
-            this.sobre1.Location = new System.Drawing.Point(-391, 6);
-            this.sobre1.Name = "sobre1";
-            this.sobre1.Size = new System.Drawing.Size(493, 401);
-            this.sobre1.TabIndex = 8;
-            // 
-            // gD_fornecedor1
-            // 
-            this.gD_fornecedor1.BackColor = System.Drawing.Color.LightGray;
-            this.gD_fornecedor1.Location = new System.Drawing.Point(203, 41);
-            this.gD_fornecedor1.Name = "gD_fornecedor1";
-            this.gD_fornecedor1.Size = new System.Drawing.Size(593, 410);
-            this.gD_fornecedor1.TabIndex = 8;
             // 
             // TL_Home
             // 
@@ -439,8 +483,10 @@ namespace Engenharia_SoftWare_modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gD_fornecedor1);
             this.Controls.Add(this.tb_home1);
+            this.Controls.Add(this.fomCliente1);
+            this.Controls.Add(this.gD_fornecedor1);
+            this.Controls.Add(this.sobre1);
             this.Controls.Add(this.teste1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pnlLogin);
@@ -451,13 +497,16 @@ namespace Engenharia_SoftWare_modern
             this.Text = "Home";
             this.Load += new System.EventHandler(this.TL_Home_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlLogin.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -490,9 +539,13 @@ namespace Engenharia_SoftWare_modern
         private System.Windows.Forms.ToolTip toolTip1;
         private Tb_home tb_home1;
         private System.Windows.Forms.Button button5;
-        private Sobre sobre1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private GD_fornecedor gD_fornecedor1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private Sobre sobre1;
+        private fomCliente fomCliente1;
     }
 }

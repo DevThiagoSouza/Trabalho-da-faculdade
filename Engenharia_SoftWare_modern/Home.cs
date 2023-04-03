@@ -13,7 +13,6 @@ namespace Engenharia_SoftWare_modern
 {
     public partial class TL_Home : Form
     {
-       
 
         public TL_Home() 
         {
@@ -100,13 +99,16 @@ namespace Engenharia_SoftWare_modern
         private void btnCliente_Click(object sender, EventArgs e)
         {
             panel7.Top = btnCliente.Bottom;
+            pnlLogin.Visible = false;
+            panel6.Visible = false;
+            fomCliente1.BringToFront();
+
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
             panel4.Height = button5.Height;
             panel4.Top = button5.Top;
-
             sobre1.BringToFront();
         }
 

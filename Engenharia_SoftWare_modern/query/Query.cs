@@ -14,7 +14,7 @@ namespace Engenharia_SoftWare_modern
 
         public static MySqlConnection GetConnection()
         {
-            string sql = "datasource=localhost;port=3306;username=thiago;password=summit123;database=tb_softwere_engine_modern";
+            string sql = "datasource=localhost;port=3306;username=thiago;password=Summit123;database=testdb";
             MySqlConnection con = new MySqlConnection(sql);
 
             try
@@ -38,6 +38,7 @@ namespace Engenharia_SoftWare_modern
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.Add("name", MySqlDbType.VarChar).Value = dB.nome;
+                cmd.Parameters.Add("name", MySqlDbType.VarChar).Value = dB.nome_Fantasia;
                 cmd.Parameters.Add("cnpj", MySqlDbType.VarChar).Value = dB.cnpj;
                 cmd.Parameters.Add("endereco", MySqlDbType.Int32).Value = dB.endereco;
                 cmd.Parameters.Add("rua", MySqlDbType.VarChar).Value = dB.rua;
@@ -58,13 +59,13 @@ namespace Engenharia_SoftWare_modern
           MySqlConnection con = GetConnection();
           MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "SELECT * FROM tb_fornecedor";
+            cmd.CommandText = "SELECT * FROM tb_fornecedor;";
+            cmd.CommandTimeout = 3000;
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Clear();
             cmd.Prepare();
             try
             {
-                con.Open();
                 MySqlDataReader dataReader = cmd.ExecuteReader();
                 dt.Load(dataReader);
 
@@ -72,7 +73,7 @@ namespace Engenharia_SoftWare_modern
             
             catch (Exception e)
             {
-                MessageBox.Show("Erro ao fazer a busca do fornecedor" + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao fazer a busca do fornecedor " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

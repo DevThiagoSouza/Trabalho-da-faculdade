@@ -125,7 +125,7 @@ namespace Engenharia_SoftWare_modern
         {
             panel4.Height = button6.Height;
             panel4.Top = button6.Top;
-            clienteCtrl1.BringToFront();
+            clienteCtrl2.BringToFront();
         }
 
         private void button7_Click(object sender, EventArgs e)

@@ -18,6 +18,7 @@ namespace Engenharia_SoftWare_modern
         public int numero { get; set; }
         public string complemento { get; set; }
         public int telefone { get; set; }
+        public int ativo { get; set; }
     }
 
 

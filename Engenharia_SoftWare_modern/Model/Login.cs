@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engenharia_SoftWare_modern
 {
-    class Login
+    class LOGIN
     {
 
         public string login { get; set; }

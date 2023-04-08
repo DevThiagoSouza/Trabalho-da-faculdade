@@ -56,7 +56,6 @@ namespace Engenharia_SoftWare_modern
             this.lblFornecedor.Size = new System.Drawing.Size(233, 27);
             this.lblFornecedor.TabIndex = 0;
             this.lblFornecedor.Text = "Cadastro Fornecedor\r\n";
-            this.lblFornecedor.Click += new System.EventHandler(this.lblFornecedor_Click);
             // 
             // textBox1
             // 
@@ -79,6 +78,8 @@ namespace Engenharia_SoftWare_modern
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(421, 348);
             this.button1.Name = "button1";
@@ -90,15 +91,17 @@ namespace Engenharia_SoftWare_modern
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(340, 348);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
             // 
@@ -107,7 +110,6 @@ namespace Engenharia_SoftWare_modern
             this.textBox3.Size = new System.Drawing.Size(62, 20);
             this.textBox3.TabIndex = 5;
             this.textBox3.Text = "Numero";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -116,7 +118,6 @@ namespace Engenharia_SoftWare_modern
             this.textBox4.Size = new System.Drawing.Size(330, 20);
             this.textBox4.TabIndex = 6;
             this.textBox4.Text = "Rua";
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -125,7 +126,6 @@ namespace Engenharia_SoftWare_modern
             this.textBox5.Size = new System.Drawing.Size(179, 20);
             this.textBox5.TabIndex = 7;
             this.textBox5.Text = "Complemento";
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label1
             // 
@@ -137,7 +137,6 @@ namespace Engenharia_SoftWare_modern
             this.label1.Size = new System.Drawing.Size(58, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Endereço";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox6
             // 
@@ -146,7 +145,6 @@ namespace Engenharia_SoftWare_modern
             this.textBox6.Size = new System.Drawing.Size(132, 20);
             this.textBox6.TabIndex = 9;
             this.textBox6.Text = "CEP";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
@@ -155,7 +153,6 @@ namespace Engenharia_SoftWare_modern
             this.textBox7.Size = new System.Drawing.Size(132, 20);
             this.textBox7.TabIndex = 10;
             this.textBox7.Text = "Cidade";
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // comboBox1
             // 
@@ -192,7 +189,6 @@ namespace Engenharia_SoftWare_modern
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(54, 21);
             this.comboBox1.TabIndex = 11;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox8
             // 
@@ -201,7 +197,6 @@ namespace Engenharia_SoftWare_modern
             this.textBox8.Size = new System.Drawing.Size(170, 20);
             this.textBox8.TabIndex = 12;
             this.textBox8.Text = "Telefone";
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // tableUpdateStatementBindingSource
             // 

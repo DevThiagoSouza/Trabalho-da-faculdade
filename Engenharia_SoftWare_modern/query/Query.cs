@@ -82,6 +82,139 @@ namespace Engenharia_SoftWare_modern
             return dt;
            
         }
+
+        public static DataTable GetCliente()
+        {
+            DataTable dt = new DataTable();
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "SELECT * FROM tb_cliente;";
+            cmd.CommandTimeout = 3000;
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Clear();
+            cmd.Prepare();
+            try
+            {
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dt.Load(dataReader);
+
+            }
+
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao fazer a busca do fornecedor " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dt;
+
+        }
+
+        public static void updateFornecedor(fornecedor forn)
+        {
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+            string sql = "";
+            try
+            {
+                sql += $"UPDATE  tb_fornecedor SET {forn.rua} , {forn.numero}, {forn.complemento}, {forn.telefone} WHERE = {forn.id} " ;
+                cmd.CommandText = sql;
+
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dataReader.Read();
+
+            }
+
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao fazer a Atualização " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public static void deleteFornecedor(fornecedor forn )
+        {
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+            string sql = "";
+            try
+            {
+                sql += $"DELETE FROM tb_fornecedor WHERE = {forn.nome}";
+                cmd.CommandText = sql;
+
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dataReader.Read();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao Deletar " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        public static string buscaFornecedor( string forn, int cnpj)
+        {
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+            string sql = "";
+            try
+            {
+                sql += $"SELECT nome, cnpj FROM tb_fornecedor  = '{forn}' ,'{cnpj} ";
+                cmd.CommandText = sql;
+
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dataReader.Read();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao Deletar " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                con.Close();
+            }
+            return sql;
+        }
+
+        public static int ativo(int ativo)
+        {
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+            int atv = 0;
+
+            try
+            {
+                string sql = $"SELECT ativo FROM tb_fornecedor = '{ativo}'";
+                cmd.CommandText = sql;
+
+
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dataReader.Read();
+                atv = Convert.ToInt32(dataReader["ativo"]);
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Erro ao fazer ao achar o fornecedor " + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return atv;
+
+        }
     }
 }
  

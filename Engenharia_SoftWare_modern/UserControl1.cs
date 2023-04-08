@@ -12,6 +12,7 @@ namespace Engenharia_SoftWare_modern
 {
     public partial class teste : UserControl
     {
+        DataTable dt = new DataTable();
         public teste()
         {
             InitializeComponent();
@@ -32,59 +33,12 @@ namespace Engenharia_SoftWare_modern
             textBox2.Clear();
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+         //   dt = Query.createFornecedor(dB);
 
         }
 
-        private void lblFornecedor_Click(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

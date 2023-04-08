@@ -10,23 +10,19 @@ using System.Windows.Forms;
 
 namespace Engenharia_SoftWare_modern
 {
-    public partial class fomCliente : UserControl
+    public partial class clienteCtrl : UserControl
     {
         DataTable dt = new DataTable();
-        public fomCliente()
+        public clienteCtrl()
         {
             InitializeComponent();
+            grid();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void grid()
         {
-            Tb_home tb_Home = new Tb_home();
-            tb_Home.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
+            dt = Query.GetCliente();
+            DtGridFornecedor.DataSource = dt;
         }
     }
 }

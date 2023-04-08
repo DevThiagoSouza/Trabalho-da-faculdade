@@ -81,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clienteCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clienteCtrl.Designer.cs">
+      <DependentUpon>clienteCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contato.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\fornecedor.cs" />
     <Compile Include="Model\cliente.cs" />
@@ -135,6 +147,9 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="clienteCtrl.resx">
+      <DependentUpon>clienteCtrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contato.resx">
       <DependentUpon>Contato.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -490,6 +508,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-pesquisar-mais-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mensagem-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fone-de-ouvido-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-suporte-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-homem-com-círculo-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-arredondado-à-direita-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

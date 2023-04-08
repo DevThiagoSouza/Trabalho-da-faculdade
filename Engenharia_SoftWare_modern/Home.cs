@@ -72,12 +72,15 @@ namespace Engenharia_SoftWare_modern
         private void button1_Click(object sender, EventArgs e) 
         {
             panel4.Height = button1.Height;
-            panel4.Top = button1.Top; 
+            panel4.Top = button1.Top;
+            contato1.BringToFront();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             panel5.Top = button2.Bottom;
+            login1.BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -115,18 +118,35 @@ namespace Engenharia_SoftWare_modern
         private void button4_Click(object sender, EventArgs e)
         {
             panel7.Top = button4.Bottom;
+           
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             panel4.Height = button6.Height;
             panel4.Top = button6.Top;
+            clienteCtrl1.BringToFront();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             panel4.Height = button7.Height;
             panel4.Top = button7.Top;
+        }
+
+        private void facebook_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://facebook.com/");
+        }
+
+        private void instagram_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/");
+        }
+
+        private void twitter_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://twitter.com/i/flow/login");
         }
     }
 }

@@ -103,6 +103,16 @@ namespace Engenharia_SoftWare_modern.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_fone_de_ouvido_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-fone-de-ouvido-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_fornecedor_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-fornecedor-24", resourceCulture);
@@ -163,6 +173,26 @@ namespace Engenharia_SoftWare_modern.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_login_arredondado_à_direita_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-login-arredondado-à-direita-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mensagem_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mensagem-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_página_inicial_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-página-inicial-24", resourceCulture);
@@ -183,9 +213,29 @@ namespace Engenharia_SoftWare_modern.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_suporte_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-suporte-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_telefone_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-telefone-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_twitter_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-twitter-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +256,16 @@ namespace Engenharia_SoftWare_modern.Properties {
         internal static System.Drawing.Bitmap icons8_usuário_homem_com_círculo_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuário-homem-com-círculo-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_usuário_homem_com_círculo_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-usuário-homem-com-círculo-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

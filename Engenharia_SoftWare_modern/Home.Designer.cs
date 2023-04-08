@@ -53,13 +53,21 @@ namespace Engenharia_SoftWare_modern
             this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnCliente = new System.Windows.Forms.Button();
-            this.btnForn = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnForn = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.teste1 = new Engenharia_SoftWare_modern.teste();
+            this.tb_home2 = new Engenharia_SoftWare_modern.Tb_home();
+            this.sobre2 = new Engenharia_SoftWare_modern.Sobre();
             this.login1 = new Engenharia_SoftWare_modern.Login();
+            this.gD_fornecedor1 = new Engenharia_SoftWare_modern.GD_fornecedor();
+            this.fomCliente2 = new Engenharia_SoftWare_modern.fomCliente();
+            this.contato2 = new Engenharia_SoftWare_modern.Contato();
+            this.clienteCtrl2 = new Engenharia_SoftWare_modern.clienteCtrl();
+            this.clienteCtrl1 = new Engenharia_SoftWare_modern.clienteCtrl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.twitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instagram)).BeginInit();
@@ -272,6 +280,7 @@ namespace Engenharia_SoftWare_modern
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.clienteCtrl1);
             this.panel3.Controls.Add(this.Data);
             this.panel3.Controls.Add(this.Hora);
             this.panel3.Location = new System.Drawing.Point(199, 0);
@@ -367,41 +376,21 @@ namespace Engenharia_SoftWare_modern
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel6
+            // btnForn
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.btnCliente);
-            this.panel6.Controls.Add(this.btnForn);
-            this.panel6.Location = new System.Drawing.Point(637, 131);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(162, 119);
-            this.panel6.TabIndex = 5;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(17, 80);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 34);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Vendedor";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.HotPink;
-            this.panel7.Location = new System.Drawing.Point(17, 30);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(134, 4);
-            this.panel7.TabIndex = 4;
+            this.btnForn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnForn.FlatAppearance.BorderSize = 0;
+            this.btnForn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForn.ForeColor = System.Drawing.Color.White;
+            this.btnForn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnForn.Location = new System.Drawing.Point(17, 0);
+            this.btnForn.Name = "btnForn";
+            this.btnForn.Size = new System.Drawing.Size(134, 34);
+            this.btnForn.TabIndex = 3;
+            this.btnForn.Text = "Fornecedor";
+            this.btnForn.UseVisualStyleBackColor = false;
+            this.btnForn.Click += new System.EventHandler(this.btnForn_Click);
             // 
             // btnCliente
             // 
@@ -419,29 +408,113 @@ namespace Engenharia_SoftWare_modern
             this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
-            // btnForn
+            // panel7
             // 
-            this.btnForn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnForn.FlatAppearance.BorderSize = 0;
-            this.btnForn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForn.ForeColor = System.Drawing.Color.White;
-            this.btnForn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnForn.Location = new System.Drawing.Point(17, 0);
-            this.btnForn.Name = "btnForn";
-            this.btnForn.Size = new System.Drawing.Size(134, 34);
-            this.btnForn.TabIndex = 3;
-            this.btnForn.Text = "Fornecedor";
-            this.btnForn.UseVisualStyleBackColor = false;
-            this.btnForn.Click += new System.EventHandler(this.btnForn_Click);
+            this.panel7.BackColor = System.Drawing.Color.HotPink;
+            this.panel7.Location = new System.Drawing.Point(17, 30);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(134, 4);
+            this.panel7.TabIndex = 4;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(17, 80);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 34);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Vendedor";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.btnCliente);
+            this.panel6.Controls.Add(this.btnForn);
+            this.panel6.Location = new System.Drawing.Point(637, 131);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(162, 119);
+            this.panel6.TabIndex = 5;
+            // 
+            // teste1
+            // 
+            this.teste1.BackColor = System.Drawing.Color.LightGray;
+            this.teste1.Location = new System.Drawing.Point(202, 38);
+            this.teste1.Name = "teste1";
+            this.teste1.Size = new System.Drawing.Size(594, 414);
+            this.teste1.TabIndex = 13;
+            // 
+            // tb_home2
+            // 
+            this.tb_home2.BackColor = System.Drawing.Color.LightGray;
+            this.tb_home2.Location = new System.Drawing.Point(203, 38);
+            this.tb_home2.Name = "tb_home2";
+            this.tb_home2.Size = new System.Drawing.Size(592, 410);
+            this.tb_home2.TabIndex = 12;
+            // 
+            // sobre2
+            // 
+            this.sobre2.BackColor = System.Drawing.Color.LightGray;
+            this.sobre2.Location = new System.Drawing.Point(199, 38);
+            this.sobre2.Name = "sobre2";
+            this.sobre2.Size = new System.Drawing.Size(596, 410);
+            this.sobre2.TabIndex = 11;
             // 
             // login1
             // 
             this.login1.BackColor = System.Drawing.Color.LightGray;
-            this.login1.Location = new System.Drawing.Point(237, 37);
+            this.login1.Location = new System.Drawing.Point(203, 38);
             this.login1.Name = "login1";
-            this.login1.Size = new System.Drawing.Size(548, 401);
-            this.login1.TabIndex = 6;
+            this.login1.Size = new System.Drawing.Size(593, 410);
+            this.login1.TabIndex = 10;
+            // 
+            // gD_fornecedor1
+            // 
+            this.gD_fornecedor1.BackColor = System.Drawing.Color.LightGray;
+            this.gD_fornecedor1.Location = new System.Drawing.Point(199, 41);
+            this.gD_fornecedor1.Name = "gD_fornecedor1";
+            this.gD_fornecedor1.Size = new System.Drawing.Size(601, 407);
+            this.gD_fornecedor1.TabIndex = 9;
+            // 
+            // fomCliente2
+            // 
+            this.fomCliente2.BackColor = System.Drawing.Color.LightGray;
+            this.fomCliente2.Location = new System.Drawing.Point(202, 38);
+            this.fomCliente2.Name = "fomCliente2";
+            this.fomCliente2.Size = new System.Drawing.Size(597, 410);
+            this.fomCliente2.TabIndex = 8;
+            // 
+            // contato2
+            // 
+            this.contato2.BackColor = System.Drawing.Color.LightGray;
+            this.contato2.Location = new System.Drawing.Point(199, 41);
+            this.contato2.Name = "contato2";
+            this.contato2.Size = new System.Drawing.Size(597, 407);
+            this.contato2.TabIndex = 7;
+            // 
+            // clienteCtrl2
+            // 
+            this.clienteCtrl2.BackColor = System.Drawing.Color.LightGray;
+            this.clienteCtrl2.Location = new System.Drawing.Point(203, 38);
+            this.clienteCtrl2.Name = "clienteCtrl2";
+            this.clienteCtrl2.Size = new System.Drawing.Size(596, 410);
+            this.clienteCtrl2.TabIndex = 6;
+            // 
+            // clienteCtrl1
+            // 
+            this.clienteCtrl1.BackColor = System.Drawing.Color.LightGray;
+            this.clienteCtrl1.Location = new System.Drawing.Point(0, 41);
+            this.clienteCtrl1.Name = "clienteCtrl1";
+            this.clienteCtrl1.Size = new System.Drawing.Size(582, 410);
+            this.clienteCtrl1.TabIndex = 7;
             // 
             // TL_Home
             // 
@@ -449,7 +522,14 @@ namespace Engenharia_SoftWare_modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.teste1);
+            this.Controls.Add(this.tb_home2);
+            this.Controls.Add(this.sobre2);
             this.Controls.Add(this.login1);
+            this.Controls.Add(this.gD_fornecedor1);
+            this.Controls.Add(this.fomCliente2);
+            this.Controls.Add(this.contato2);
+            this.Controls.Add(this.clienteCtrl2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.panel3);
@@ -491,11 +571,6 @@ namespace Engenharia_SoftWare_modern
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnCliente;
-        private System.Windows.Forms.Button btnForn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ToolTip toolTip1;
         private Tb_home tb_home1;
@@ -508,6 +583,19 @@ namespace Engenharia_SoftWare_modern
         private Sobre sobre1;
         private fomCliente fomCliente1;
         private Contato contato1;
+        private clienteCtrl clienteCtrl1;
+        private System.Windows.Forms.Button btnForn;
+        private System.Windows.Forms.Button btnCliente;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel6;
+        private clienteCtrl clienteCtrl2;
+        private Contato contato2;
+        private fomCliente fomCliente2;
+        private GD_fornecedor gD_fornecedor1;
         private Login login1;
+        private Sobre sobre2;
+        private Tb_home tb_home2;
+        private teste teste1;
     }
 }

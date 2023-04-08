@@ -26,7 +26,7 @@ namespace Engenharia_SoftWare_modern
 
         private void TL_Home_Load(object sender, EventArgs e)
         {
-            tb_home1.BringToFront();
+            tb_home2.BringToFront();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -66,14 +66,14 @@ namespace Engenharia_SoftWare_modern
         {
             panel4.Height = btnHome.Height;
             panel4.Top = btnHome.Top;
-            tb_home1.BringToFront();
+            tb_home2.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e) 
         {
             panel4.Height = button1.Height;
             panel4.Top = button1.Top;
-            contato1.BringToFront();
+            contato2.BringToFront();
             
         }
 
@@ -104,7 +104,7 @@ namespace Engenharia_SoftWare_modern
             panel7.Top = btnCliente.Bottom;
             pnlLogin.Visible = false;
             panel6.Visible = false;
-            fomCliente1.BringToFront();
+            fomCliente2.BringToFront();
 
         }
 
@@ -112,7 +112,7 @@ namespace Engenharia_SoftWare_modern
         {
             panel4.Height = button5.Height;
             panel4.Top = button5.Top;
-            sobre1.BringToFront();
+            sobre2.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)

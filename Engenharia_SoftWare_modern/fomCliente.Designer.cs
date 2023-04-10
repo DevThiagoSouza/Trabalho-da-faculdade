@@ -29,33 +29,34 @@ namespace Engenharia_SoftWare_modern
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.telefone = new System.Windows.Forms.TextBox();
+            this.uf = new System.Windows.Forms.ComboBox();
+            this.cidade = new System.Windows.Forms.TextBox();
+            this.cep = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.complemento = new System.Windows.Forms.TextBox();
+            this.rua = new System.Windows.Forms.TextBox();
+            this.numero = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cpf = new System.Windows.Forms.TextBox();
+            this.nome = new System.Windows.Forms.TextBox();
             this.lblFornecedor = new System.Windows.Forms.Label();
+            this.sobrenome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox8
+            // telefone
             // 
-            this.textBox8.Location = new System.Drawing.Point(106, 163);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(170, 20);
-            this.textBox8.TabIndex = 25;
-            this.textBox8.Text = "Telefone";
+            this.telefone.Location = new System.Drawing.Point(106, 189);
+            this.telefone.Name = "telefone";
+            this.telefone.Size = new System.Drawing.Size(170, 20);
+            this.telefone.TabIndex = 25;
+            this.telefone.Text = "Telefone";
             // 
-            // comboBox1
+            // uf
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.uf.FormattingEnabled = true;
+            this.uf.Items.AddRange(new object[] {
             "AC",
             "AL",
             "AP",
@@ -83,26 +84,26 @@ namespace Engenharia_SoftWare_modern
             "SE",
             "TO",
             "DF"});
-            this.comboBox1.Location = new System.Drawing.Point(382, 292);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(54, 21);
-            this.comboBox1.TabIndex = 24;
+            this.uf.Location = new System.Drawing.Point(382, 292);
+            this.uf.Name = "uf";
+            this.uf.Size = new System.Drawing.Size(54, 21);
+            this.uf.TabIndex = 24;
             // 
-            // textBox7
+            // cidade
             // 
-            this.textBox7.Location = new System.Drawing.Point(244, 293);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 20);
-            this.textBox7.TabIndex = 23;
-            this.textBox7.Text = "Cidade";
+            this.cidade.Location = new System.Drawing.Point(244, 293);
+            this.cidade.Name = "cidade";
+            this.cidade.Size = new System.Drawing.Size(132, 20);
+            this.cidade.TabIndex = 23;
+            this.cidade.Text = "Cidade";
             // 
-            // textBox6
+            // cep
             // 
-            this.textBox6.Location = new System.Drawing.Point(106, 293);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 20);
-            this.textBox6.TabIndex = 22;
-            this.textBox6.Text = "CEP";
+            this.cep.Location = new System.Drawing.Point(106, 293);
+            this.cep.Name = "cep";
+            this.cep.Size = new System.Drawing.Size(132, 20);
+            this.cep.TabIndex = 22;
+            this.cep.Text = "CEP";
             // 
             // label1
             // 
@@ -115,29 +116,29 @@ namespace Engenharia_SoftWare_modern
             this.label1.TabIndex = 21;
             this.label1.Text = "Endereço";
             // 
-            // textBox5
+            // complemento
             // 
-            this.textBox5.Location = new System.Drawing.Point(174, 267);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 20);
-            this.textBox5.TabIndex = 20;
-            this.textBox5.Text = "Complemento";
+            this.complemento.Location = new System.Drawing.Point(174, 267);
+            this.complemento.Name = "complemento";
+            this.complemento.Size = new System.Drawing.Size(179, 20);
+            this.complemento.TabIndex = 20;
+            this.complemento.Text = "Complemento";
             // 
-            // textBox4
+            // rua
             // 
-            this.textBox4.Location = new System.Drawing.Point(106, 241);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(330, 20);
-            this.textBox4.TabIndex = 19;
-            this.textBox4.Text = "Rua";
+            this.rua.Location = new System.Drawing.Point(106, 241);
+            this.rua.Name = "rua";
+            this.rua.Size = new System.Drawing.Size(330, 20);
+            this.rua.TabIndex = 19;
+            this.rua.Text = "Rua";
             // 
-            // textBox3
+            // numero
             // 
-            this.textBox3.Location = new System.Drawing.Point(106, 267);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 20);
-            this.textBox3.TabIndex = 18;
-            this.textBox3.Text = "Numero";
+            this.numero.Location = new System.Drawing.Point(106, 267);
+            this.numero.Name = "numero";
+            this.numero.Size = new System.Drawing.Size(62, 20);
+            this.numero.TabIndex = 18;
+            this.numero.Text = "Numero";
             // 
             // button2
             // 
@@ -168,21 +169,21 @@ namespace Engenharia_SoftWare_modern
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // cpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(106, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(330, 20);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.Text = "CNPJ";
+            this.cpf.Location = new System.Drawing.Point(106, 163);
+            this.cpf.Name = "cpf";
+            this.cpf.Size = new System.Drawing.Size(330, 20);
+            this.cpf.TabIndex = 15;
+            this.cpf.Text = "CPF";
             // 
-            // textBox1
+            // nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 20);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.Text = "Nome";
+            this.nome.Location = new System.Drawing.Point(106, 111);
+            this.nome.Name = "nome";
+            this.nome.Size = new System.Drawing.Size(330, 20);
+            this.nome.TabIndex = 14;
+            this.nome.Text = "Nome";
             // 
             // lblFornecedor
             // 
@@ -194,23 +195,32 @@ namespace Engenharia_SoftWare_modern
             this.lblFornecedor.TabIndex = 13;
             this.lblFornecedor.Text = "  Cadastro Cliente\r\n";
             // 
+            // sobrenome
+            // 
+            this.sobrenome.Location = new System.Drawing.Point(106, 137);
+            this.sobrenome.Name = "sobrenome";
+            this.sobrenome.Size = new System.Drawing.Size(330, 20);
+            this.sobrenome.TabIndex = 26;
+            this.sobrenome.Text = "Sobrenome";
+            // 
             // fomCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.sobrenome);
+            this.Controls.Add(this.telefone);
+            this.Controls.Add(this.uf);
+            this.Controls.Add(this.cidade);
+            this.Controls.Add(this.cep);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.complemento);
+            this.Controls.Add(this.rua);
+            this.Controls.Add(this.numero);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cpf);
+            this.Controls.Add(this.nome);
             this.Controls.Add(this.lblFornecedor);
             this.Name = "fomCliente";
             this.Size = new System.Drawing.Size(538, 444);
@@ -221,18 +231,19 @@ namespace Engenharia_SoftWare_modern
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox telefone;
+        private System.Windows.Forms.ComboBox uf;
+        private System.Windows.Forms.TextBox cidade;
+        private System.Windows.Forms.TextBox cep;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox complemento;
+        private System.Windows.Forms.TextBox rua;
+        private System.Windows.Forms.TextBox numero;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cpf;
+        private System.Windows.Forms.TextBox nome;
         private System.Windows.Forms.Label lblFornecedor;
+        private System.Windows.Forms.TextBox sobrenome;
     }
 }

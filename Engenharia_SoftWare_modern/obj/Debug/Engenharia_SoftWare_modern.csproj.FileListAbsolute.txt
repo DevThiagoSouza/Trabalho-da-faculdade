@@ -39,3 +39,10 @@ D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\obj\D
 D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\obj\Debug\Engenharia_SoftWare_modern.clienteCtrl.resources
 D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\obj\Debug\Engenharia_SoftWare_modern.Login.resources
 D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\obj\Debug\Engenharia_SoftWare_modern.csproj.AssemblyReference.cache
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\bin\Debug\Docker.DotNet.dll
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\bin\Debug\Newtonsoft.Json.dll
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\bin\Debug\Docker.DotNet.pdb
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\bin\Debug\Newtonsoft.Json.xml
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Projeto_Faculdade\Engenharia_SoftWare_modern\Engenharia_SoftWare_modern\obj\Debug\Engenharia_SoftWare_modern.metricas.resources

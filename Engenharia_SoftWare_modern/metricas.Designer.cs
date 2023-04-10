@@ -29,10 +29,17 @@ namespace Engenharia_SoftWare_modern
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // metricas
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(254, 235);
+            this.Name = "metricas";
             this.Text = "metricas";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

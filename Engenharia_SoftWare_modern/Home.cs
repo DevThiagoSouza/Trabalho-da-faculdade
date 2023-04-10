@@ -96,7 +96,7 @@ namespace Engenharia_SoftWare_modern
             pnlLogin.Visible = false;
             panel6.Visible = false;
             teste1.BringToFront();
-
+       
         }
 
         private void btnCliente_Click(object sender, EventArgs e)

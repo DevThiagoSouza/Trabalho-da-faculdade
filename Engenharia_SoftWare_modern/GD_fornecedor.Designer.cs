@@ -40,14 +40,16 @@ namespace Engenharia_SoftWare_modern
             this.boxpesquisa = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_fantasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CNPJ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtGridFornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
@@ -63,17 +65,20 @@ namespace Engenharia_SoftWare_modern
             this.DtGridFornecedor.AutoGenerateColumns = false;
             this.DtGridFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ativo,
             this.nome,
+            this.nome_fantasia,
             this.CNPJ,
             this.telefone,
+            this.cidade,
             this.rua,
-            this.endereco,
+            this.numero,
             this.complemento,
-            this.numero});
+            this.cep,
+            this.uf});
             this.DtGridFornecedor.DataSource = this.dataSet1;
             this.DtGridFornecedor.Location = new System.Drawing.Point(18, 60);
             this.DtGridFornecedor.Name = "DtGridFornecedor";
+            this.DtGridFornecedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DtGridFornecedor.Size = new System.Drawing.Size(570, 290);
             this.DtGridFornecedor.TabIndex = 0;
             // 
@@ -114,7 +119,6 @@ namespace Engenharia_SoftWare_modern
             this.btnAtivo.TabIndex = 3;
             this.btnAtivo.Text = "Ativo";
             this.btnAtivo.UseVisualStyleBackColor = false;
-            this.btnAtivo.Click += new System.EventHandler(this.btnAtivo_Click);
             // 
             // dataSet1BindingSource1
             // 
@@ -157,17 +161,17 @@ namespace Engenharia_SoftWare_modern
             // 
             this.tableUpdateStatementBindingSource.DataSource = typeof(MySqlX.XDevAPI.Relational.TableUpdateStatement);
             // 
-            // ativo
-            // 
-            this.ativo.DataPropertyName = "ativo";
-            this.ativo.HeaderText = "ativo";
-            this.ativo.Name = "ativo";
-            // 
             // nome
             // 
             this.nome.DataPropertyName = "nome";
             this.nome.HeaderText = "nome";
             this.nome.Name = "nome";
+            // 
+            // nome_fantasia
+            // 
+            this.nome_fantasia.DataPropertyName = "name_fantasia";
+            this.nome_fantasia.HeaderText = "nome fantasia";
+            this.nome_fantasia.Name = "nome_fantasia";
             // 
             // CNPJ
             // 
@@ -183,6 +187,12 @@ namespace Engenharia_SoftWare_modern
             this.telefone.Name = "telefone";
             this.telefone.ReadOnly = true;
             // 
+            // cidade
+            // 
+            this.cidade.DataPropertyName = "cidade";
+            this.cidade.HeaderText = "cidade";
+            this.cidade.Name = "cidade";
+            // 
             // rua
             // 
             this.rua.DataPropertyName = "rua";
@@ -190,12 +200,12 @@ namespace Engenharia_SoftWare_modern
             this.rua.Name = "rua";
             this.rua.ReadOnly = true;
             // 
-            // endereco
+            // numero
             // 
-            this.endereco.DataPropertyName = "endereco";
-            this.endereco.HeaderText = "endereco";
-            this.endereco.Name = "endereco";
-            this.endereco.ReadOnly = true;
+            this.numero.DataPropertyName = "numero";
+            this.numero.HeaderText = "numero";
+            this.numero.Name = "numero";
+            this.numero.ReadOnly = true;
             // 
             // complemento
             // 
@@ -204,12 +214,17 @@ namespace Engenharia_SoftWare_modern
             this.complemento.Name = "complemento";
             this.complemento.ReadOnly = true;
             // 
-            // numero
+            // cep
             // 
-            this.numero.DataPropertyName = "numero";
-            this.numero.HeaderText = "numero";
-            this.numero.Name = "numero";
-            this.numero.ReadOnly = true;
+            this.cep.DataPropertyName = "cep";
+            this.cep.HeaderText = "cep";
+            this.cep.Name = "cep";
+            // 
+            // uf
+            // 
+            this.uf.DataPropertyName = "uf";
+            this.uf.HeaderText = "uf";
+            this.uf.Name = "uf";
             // 
             // GD_fornecedor
             // 
@@ -220,6 +235,7 @@ namespace Engenharia_SoftWare_modern
             this.Controls.Add(this.DtGridFornecedor);
             this.Name = "GD_fornecedor";
             this.Size = new System.Drawing.Size(601, 370);
+            this.Load += new System.EventHandler(this.GD_fornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtGridFornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
@@ -244,13 +260,15 @@ namespace Engenharia_SoftWare_modern
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox boxpesquisa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ativo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_fantasia;
         private System.Windows.Forms.DataGridViewTextBoxColumn CNPJ;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn rua;
-        private System.Windows.Forms.DataGridViewTextBoxColumn endereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn complemento;
         private System.Windows.Forms.DataGridViewTextBoxColumn numero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn complemento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uf;
     }
 }

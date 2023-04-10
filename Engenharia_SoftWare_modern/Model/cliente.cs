@@ -11,11 +11,12 @@ namespace Engenharia_SoftWare_modern.Model
         public int id { get; set; }
         public string nome { get; set; }
         public int cpf { get; set; }
-        public string endereco { get; set; }
         public string rua { get; set; }
         public int numero { get; set; }
         public string complemento { get; set; }
         public int telefone { get; set; }
-
+        public int cep { get; set; }
+        public string cidade { get; set; }
+        public string uf { get; set; }
     }
 }
